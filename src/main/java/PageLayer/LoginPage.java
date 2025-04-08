@@ -33,6 +33,7 @@ public class LoginPage extends BaseClass {
 	{
 		Wait.click(loginButton);
 		System.out.println("For GitHub Purpose adding Syso 1 Statement by SonaliKhalate");
+		System.out.println("for Github Syso Statement new 1 TC was added by Sonali");
 	}
 	
 	
