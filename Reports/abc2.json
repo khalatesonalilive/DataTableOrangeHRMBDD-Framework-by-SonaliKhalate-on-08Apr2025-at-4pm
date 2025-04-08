@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-23T10:00:02.440Z",
+        "line": 3,
+        "name": "Test Login Page Functionality",
+        "description": "",
+        "id": "test-orangehrm-application;test-login-page-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.397\n  (Session info: MicrosoftEdge\u003d126.0.2592.113)\nBuild info: version: \u00274.15.0\u0027, revision: \u00271d14b5521b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.8.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [5682e6324e81a67cc44e4ef28baa40f2, get {url\u003dhttps://opensource-demo.orangehrmlive.com/web/index.php/auth/login}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.113, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64362}, msedge: {msedgedriverVersion: 126.0.2592.113 (088a59f7406..., userDataDir: C:\\Users\\khala\\AppData\\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64362/devtoo..., se:cdpVersion: 126.0.2592.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5682e6324e81a67cc44e4ef28baa40f2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)\r\n\tat BaseLayer.BaseClass.initialisation(BaseClass.java:40)\r\n\tat OrangeDataTableSteps.OrangeStepss.user_is_on_login_page(OrangeStepss.java:21)\r\n\tat ✽.user is on Login Page(file:///C:/Users/khala/BDD%20WORKSPACE/DataTableOrangeHRMBDD2024/AllFeatureFiles/TC_001_datatableOrangeHrm.feature:4)\r\n",
+              "duration": 33918989600,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "user is on Login Page",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user enter valid credentials",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_enter_valid_credentials(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click on login button",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-23T10:00:36.443Z",
+        "line": 9,
+        "name": "Test Home Page Functionality",
+        "description": "",
+        "id": "test-orangehrm-application;test-home-page-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19620800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on home page and validate the home page title",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_is_on_home_page_and_validate_the_home_page_title(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "OrangeHRM"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validate the home page url",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_validate_the_home_page_url()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027oxd-brand-banner toggled\u0027]\"}\n  (Session info: MicrosoftEdge\u003d126.0.2592.113)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.15.0\u0027, revision: \u00271d14b5521b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.8.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [5682e6324e81a67cc44e4ef28baa40f2, findElement {using\u003dxpath, value\u003d//div[@class\u003d\u0027oxd-brand-banner toggled\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.113, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64362}, msedge: {msedgedriverVersion: 126.0.2592.113 (088a59f7406..., userDataDir: C:\\Users\\khala\\AppData\\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64362/devtoo..., se:cdpVersion: 126.0.2592.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5682e6324e81a67cc44e4ef28baa40f2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)\r\n\tat OrangeDataTableSteps.OrangeStepss.user_validate_the_home_page_logo(OrangeStepss.java:64)\r\n\tat ✽.user validate the home page logo(file:///C:/Users/khala/BDD%20WORKSPACE/DataTableOrangeHRMBDD2024/AllFeatureFiles/TC_001_datatableOrangeHrm.feature:13)\r\n",
+              "duration": 30052544200,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "user validate the home page logo",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_validate_the_home_page_logo(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-23T10:01:06.531Z",
+        "line": 16,
+        "name": "Test PIM Page Functionality",
+        "description": "",
+        "id": "test-orangehrm-application;test-pim-page-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[text()\u003d\u0027PIM\u0027]\"}\n  (Session info: MicrosoftEdge\u003d126.0.2592.113)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.15.0\u0027, revision: \u00271d14b5521b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.8.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [5682e6324e81a67cc44e4ef28baa40f2, findElement {using\u003dxpath, value\u003d//span[text()\u003d\u0027PIM\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.113, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64362}, msedge: {msedgedriverVersion: 126.0.2592.113 (088a59f7406..., userDataDir: C:\\Users\\khala\\AppData\\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64362/devtoo..., se:cdpVersion: 126.0.2592.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5682e6324e81a67cc44e4ef28baa40f2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)\r\n\tat OrangeDataTableSteps.OrangeStepss.user_click_on_pim_page_link(OrangeStepss.java:71)\r\n\tat ✽.user click on pim page link(file:///C:/Users/khala/BDD%20WORKSPACE/DataTableOrangeHRMBDD2024/AllFeatureFiles/TC_001_datatableOrangeHrm.feature:17)\r\n",
+              "duration": 35069981900,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "user click on pim page link",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_click_on_pim_page_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1549000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user validate the user is on pim page using the url",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_validate_the_user_is_on_pim_page_using_the_url(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "pim"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user click add employee and enter firstname, lastname and click on save button",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_click_add_employee_and_enter_firstname_lastname_and_click_on_save_button(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Shivanya",
+                  "Bhosale"
+                ]
+              },
+              {
+                "cells": [
+                  "Siya",
+                  "Ram"
+                ]
+              },
+              {
+                "cells": [
+                  "radha",
+                  "shyam"
+                ]
+              },
+              {
+                "cells": [
+                  "vitthal",
+                  "RakhuMai"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user capture the employee id number and user click on employee list",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_capture_the_employee_id_number_and_user_click_on_employee_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "user enter employee id in employee id textbox and click on search button",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_enter_employee_id_in_employee_id_textbox_and_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996100,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user select the search employee and click on delete",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_select_the_search_employee_and_click_on_delete()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "validate the employee is deleted or not",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.validate_the_employee_is_deleted_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-23T10:01:41.616Z",
+        "line": 30,
+        "name": "Test Logout Functionality",
+        "description": "",
+        "id": "test-orangehrm-application;test-logout-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//img[@alt\u003d\u0027profile picture\u0027]\"}\n  (Session info: MicrosoftEdge\u003d126.0.2592.113)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.15.0\u0027, revision: \u00271d14b5521b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.8.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [5682e6324e81a67cc44e4ef28baa40f2, findElement {using\u003dxpath, value\u003d//img[@alt\u003d\u0027profile picture\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.113, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64362}, msedge: {msedgedriverVersion: 126.0.2592.113 (088a59f7406..., userDataDir: C:\\Users\\khala\\AppData\\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64362/devtoo..., se:cdpVersion: 126.0.2592.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5682e6324e81a67cc44e4ef28baa40f2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)\r\n\tat OrangeDataTableSteps.OrangeStepss.user_click_on_profile_and_click_on_logout_button(OrangeStepss.java:153)\r\n\tat ✽.user click on profile and click on logout button(file:///C:/Users/khala/BDD%20WORKSPACE/DataTableOrangeHRMBDD2024/AllFeatureFiles/TC_001_datatableOrangeHrm.feature:31)\r\n",
+              "duration": 30070226500,
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "user click on profile and click on logout button",
+            "match": {
+              "location": "OrangeDataTableSteps.OrangeStepss.user_click_on_profile_and_click_on_logout_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Test OrangeHRM Application",
+    "description": "",
+    "id": "test-orangehrm-application",
+    "keyword": "Feature",
+    "uri": "file:AllFeatureFiles/TC_001_datatableOrangeHrm.feature",
+    "tags": []
+  }
+]
